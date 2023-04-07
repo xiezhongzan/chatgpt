@@ -1,4 +1,4 @@
-*{padding: 0;
+*{padding: 0; font-family: 微软雅黑;
     margin: 0;}
 #app{
     display: flex;
@@ -134,4 +134,25 @@
     margin-left: 20px;
     cursor:pointer;
     display: flex;
+}
+
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f3f3f3;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #f5f5f5;
 }
