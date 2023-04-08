@@ -1,13 +1,12 @@
 # chatgpt
 用vue 开发的 html  chatgpt对话框 模板 (参考市面最好看的界面） 
-
+目前版本在迭代中，后期有功能更新 群里第一时间通知，欢迎入群
 #### 介绍
 ChatGPT是一款领先的自然语言处理模型，通过模拟人类思维和语言交流功能，在各个领域得到了广泛的应用。它是目前最先进的深度学习技术，可以进行图像生成、语音识别和自然语言生成。
 
 #### 效果看图
 <div align=center>
 <img src="http://img.myai.ren/1.png" width="400"/> 
-<img src="http://img.myai.ren/2.png" width="400"/> 
 </div>
 
 
