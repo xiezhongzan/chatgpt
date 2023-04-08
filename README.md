@@ -6,7 +6,7 @@ ChatGPT是一款领先的自然语言处理模型，通过模拟人类思维和�
 
 #### 效果看图
 <div align=center>
-<img src="http://img.myai.ren/1.png" width="400"/> 
+<img src="http://img.myai.ren/demo.jpg" width="800"/> 
 </div>
 
 
