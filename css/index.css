@@ -42,7 +42,7 @@
     background-color: #f3f3f3
 }
 .xin{font-family: 微软雅黑;color:black;font-size: 14px; margin-top: 6px; margin-left: 12px}
-.yitiao{font-family: 微软雅黑;color:#b2b2b2;font-size: 10px; margin-top: 6px; margin-left: 12px}
+.yitiao{font-family: 微软雅黑;color:#b2b2b2;font-size: 10px; margin-top: 6px; margin-left: 12px;}
 .time{font-family: 微软雅黑;color:#b2b2b2;font-size: 10px; margin-top: 6px; margin-left: 12px;margin-right: 10px}
 .sz{
     font-family: 微软雅黑;
@@ -156,3 +156,15 @@
 ::-webkit-scrollbar-thumb:active {
     background-color: #f5f5f5;
 }
+
+.messagetop{
+    width: 100%;background-color: #ffffff; height: 86px;display: flex !important;justify-content: space-between !important; border-bottom:1px #ecebeb solid;
+}
+.messagetoptitle{font-family: 微软雅黑;font-size: 20px; margin-left: 20px; margin-top: 20px}
+.messagetopnum{font-family: 微软雅黑;color:#b2b2b2;font-size: 10px; margin-top: 6px; margin-left: 12px;margin-left: 20px;}
+
+.messageleftimg{margin-top:20px;margin-left:20px;border-radius: 10px; width:30px;height: 30px;background-color: #effcf6; border: #ecebeb 1px solid}
+.messageleftct{display: inline-block;width: auto; height: auto;font-size:14px;padding:20px;margin-top:10px;margin-left:20px;border-radius: 10px;background-color: #f5f5f5; border: #ecebeb 1px solid}
+.messagerightct{margin-right:20px;display: inline-block;width: auto; height: auto;font-size:14px;padding:20px;margin-top:10px;margin-left:20px;border-radius: 10px;background-color: #f5f5f5; border: #ecebeb 1px solid}
+.answer{outline-color:#64a8b0;height: 136px; position: absolute;width: auto; bottom: 10px; right: 20px; left: 20px;border-radius: 10px; padding: 10px; border: #dadada 1px solid}
+.send{font-size:8px; color:white;padding-top:20px;text-align:center;position: absolute; cursor: pointer; z-index: 100;bottom: 30px; right: 40px;width:83px;height: 39px;background-color: #4e838b; border: #ecebeb 1px solid;border-radius: 10px;}
