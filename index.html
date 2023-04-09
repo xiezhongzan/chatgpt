@@ -5,7 +5,7 @@
     <title>chatgpt</title>
     <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-    <link rel='stylesheet' href='css/index.css' type='text/css'/>
+    <link rel='stylesheet' href='css/index.css?id=3' type='text/css'/>
 </head>
 <body>
 <div id="app">
@@ -39,8 +39,8 @@
 
         </div>
 
-
-        <div class="li">
+        <div class="addct"  :style="[{height:lm+'px'}]" style="overflow: auto; ">
+        <div class="li onli" id="1"  >
             <div class="xin">新的聊天</div>
             <div style="display: flex; justify-content: space-between">
                 <div class="yitiao">5条对话</div>
@@ -48,21 +48,22 @@
             </div>
         </div>
 
-        <div class="li">
-            <div class="xin">农村的未来</div>
-            <div style="display: flex; justify-content: space-between">
-                <div class="yitiao">10条对话</div>
-                <div class="time">2023/10/15 23:24:50</div>
-            </div>
+        </div>
+        <div  style="    cursor:pointer;
+    height: 1px;
+    width: 258px;
+    border: #e7f8ff 2px solid;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #e7f8ff; ">
+
         </div>
 
-        <div class="li">
-            <div class="xin">国家的希望</div>
-            <div style="display: flex; justify-content: space-between">
-                <div class="yitiao">8条对话</div>
-                <div class="time">2023/10/15 23:24:50</div>
-            </div>
-        </div>
+
+
 
 
         <div style="position: absolute; bottom: 0px;width:300px; height: 50px; overflow: hidden">
@@ -114,7 +115,7 @@
                             </g>
                         </svg>
                     </div>
-                    <div style="margin-top: 10px">&nbsp;新的聊天</div>
+                    <div style="margin-top: 10px" class="add">&nbsp;新的聊天</div>
                 </div>
 
 
@@ -130,7 +131,7 @@
         <div :style="[{height:he+'px'}]" style="border-left: #4f4f4f 3px solid;">
 
         </div>
-
+        <div class="dom1 ow"  style="width: 100%">
         <div :style="[{height:he+'px'}]" class="message">
             <div class="messagetop">
                 <div>
@@ -173,7 +174,8 @@
             </div>
 
 
-            <div style="overflow: auto; " :style="[{height:ct+'px'}]">
+            <div class="onmessage" style="overflow: auto; " :style="[{height:ct+'px'}]">
+
                 <div class="messageleft">
                     <div class="messageleftimg">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30"
@@ -264,9 +266,10 @@
 
 
                 </div>
+
 
             </div>
-
+        </div>
 
        <textarea placeholder="请输入您的问题" class="answer" style="resize:none !important;"></textarea>
 
@@ -285,42 +288,6 @@
 
 </div>
 
-<script>
-    new Vue({
-        el: '#app',
-        data: {
-            left: {
-                active: true
-            },
-            right: {
-                leftcla: true
-            },
-            divHei: 0,
-            he: 0,
-            ct:0
-        },
-        methods: {
-            getHtmlHeight() {
-                this.he = window.innerHeight;
-                this.ct = window.innerHeight-270;
-                this.divHei = window.innerHeight - 50;
-            }
-        },
-        mounted() {
-            this.getHtmlHeight();
-
-        }
-    })
-
-    $(document).keypress(function(e) {
-        if((e.which == 13 && e.ctrlKey) || (e.which == 10 && e.ctrlKey)){
-            // 这里实现换行
-
-            var content = $(".answer").val();
-           
-        }
-    });
-
-</script>
+<script src="js/index.js"></script>
 </body>
 </html>
